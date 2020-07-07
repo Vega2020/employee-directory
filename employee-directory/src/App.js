@@ -3,13 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 import Form from "./components/Form";
 import Table from "./components/Table";
+import $ from "jquery";
+
+function getRandomPerson() {
+  $.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+    }
+  });
+};
+
+getRandomPerson();
 
 function App() {
   return (
     <div className="App">
+    <Form></Form>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Form></Form>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
