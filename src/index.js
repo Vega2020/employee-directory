@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// This is what's actually being rendered to the screen when we load the app. 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  // What's this do?
   document.getElementById('root')
 );
 
