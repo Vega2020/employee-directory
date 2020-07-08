@@ -18,6 +18,7 @@ class Form extends Component {
     });
   };
 
+//CODE FOR SEARCH BAR WILL GO IN THIS FUNCTION
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
@@ -26,8 +27,8 @@ class Form extends Component {
     if (!this.state.firstName && !this.state.lastName) {
       alert("Fill out a first or last name please!");
     } else {
-      // Code for processing the search input will go here.
-      alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
+      // Code for processing the search input will go here!!! It will probably be a filter method.
+      alert(`Thank you for searching`);
     }
 
     this.setState({
@@ -35,6 +36,7 @@ class Form extends Component {
       lastName: "",
     });
   };
+  
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
@@ -58,7 +60,7 @@ class Form extends Component {
             type="text"
             placeholder="Last Name"
           />
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <button onClick={this.handleFormSubmit}>Search</button>
         </form>
       </div>
     );
