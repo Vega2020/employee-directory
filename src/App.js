@@ -79,7 +79,7 @@ const App = () => {
   return (
     <div className="App">
 
-    {/* Call the Form component (this powers the search function) */}
+    {/* Call the Form component (which enables the search function) */}
     <Form></Form>
 
     <ReactBootStrap.Table striped bordered hover>

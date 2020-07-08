@@ -29,8 +29,10 @@ class Form extends Component {
     } else {
       // Code for processing the search input will go here!!! It will probably be a filter method.
       alert(`Thank you for searching`);
+      
     }
 
+    // This is resetting the state, might have to take it out
     this.setState({
       firstName: "",
       lastName: "",
